@@ -39,7 +39,7 @@ class DeviceEnumeratorImpl : public aditof::DeviceEnumeratorInterface {
     ~DeviceEnumeratorImpl() = default;
 
   public: // implements DeviceEnumeratorInterface
-    virtual aditof::Status
+    /*virtual*/ aditof::Status
     findDevices(std::vector<aditof::DeviceConstructionData> &devices);
 };
 
