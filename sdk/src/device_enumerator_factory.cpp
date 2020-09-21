@@ -39,6 +39,7 @@ using namespace aditof;
 
 std::unique_ptr<DeviceEnumeratorInterface>
 DeviceEnumeratorFactory::buildDeviceEnumerator() {
+#error this gets built
     return std::unique_ptr<DeviceEnumeratorInterface>(new DeviceEnumeratorImpl);
 }
 
