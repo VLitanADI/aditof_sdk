@@ -33,13 +33,15 @@
 
 #include "camera_eeprom_factory.h"
 #include "camera_eeprom_interface.h"
+#include <aditof/status_definitions.h>
 
+#include <../../sdk/src/connections/network/device_enumerator_ethernet.h>
+#include <aditof/camera.h>
+#include <aditof/device_construction_data.h>
 #include <aditof/device_enumerator_factory.h>
 #include <aditof/device_enumerator_interface.h>
 #include <aditof/device_factory.h>
-#include <aditof/eeprom_construction_data.h>
 #include <aditof/eeprom_factory.h>
-#include <device_enumerator_ethernet.h>
 
 #include <algorithm>
 #include <fstream>
