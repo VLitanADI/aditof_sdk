@@ -37,10 +37,11 @@ endif()
 
 add_subdirectory(sdk)
 add_subdirectory(apps)
-add_subdirectory(tools/eeprom-tool)
 if (MSVC)
         add_subdirectory(tools/deps/wingetopt)
 endif(MSVC)
+add_subdirectory(tools/eeprom-tool)
+
 
 if (WITH_EXAMPLES)
         add_subdirectory(examples)
